@@ -130,9 +130,18 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
    Untuk yang ```TOKEN``` dan ```CONNECTOR``` pastikan menggunakan standar dari <a href="https://www.uuidgenerator.net/version4">UUID V4</a>.
 
 4. Bauat stack pada Portainer, dengan menggunakan file ```docker-compose.yml```.
+   <p align="center">
+    <a href="https://github.com/niomictomi/Opencti-Docker" target="_blank">
+    <img src="https://github.com/niomictomi/uuid-for-laravel/blob/main/file/tomslock.png" width="400"></a></p>
 5. Setting environment berdasarkan file ```.env```.
+   <p align="center">
+    <a href="https://github.com/niomictomi/Opencti-Docker" target="_blank">
+    <img src="https://github.com/niomictomi/uuid-for-laravel/blob/main/file/tomslock.png" width="400"></a></p>
 6. Selanjutnya, tinggal pencet ```Deploy the stack``` dan tungggu prosesnya bro.
 7. Setelah proses selesai, buk browser dan akses ```alamat-ip:8080``` dan OPENCTI akan tampil pada halaman tersebut.
+   <p align="center">
+    <a href="https://github.com/niomictomi/Opencti-Docker" target="_blank">   
+    <img src="https://github.com/niomictomi/uuid-for-laravel/blob/main/file/tomslock.png" width="400"></a></p>
 
 
 ## Penutup
