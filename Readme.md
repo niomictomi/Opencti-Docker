@@ -109,6 +109,17 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
     CONNECTOR_IMPORT_DOCUMENT_ID=ChangeMe
     SMTP_HOSTNAME=ChangeMe.Mail.Com
    ```
+   Untuk yang ```TOKEN``` dan ```CONNECTOR``` pastikan menggunakan standar dari <a href="https://www.uuidgenerator.net/version4">UUID V4</a>.
+
+4. Bauat stack pada Portainer, dengan menggunakan file ```docker-compose.yml```.
+5. Setting environment berdasarkan file ```.env```.
+6. Selanjutnya, tinggal pencet ```Deploy the stack``` dan tungggu prosesnya bro.
+7. Setelah proses selesai, buk browser dan akses ```alamat-ip:8080``` dan OPENCTI akan tampil pada halaman tersebut.
+
+
+## Penutup
+Demikian sedikit informasi dari kami, tentang instalasi opencti pada Docker via Portainer.
+Terimakasih.
 
 
 
