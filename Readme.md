@@ -15,7 +15,7 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
 
 
 
-## Insntalasi
+## Instalasi
 1. Pre-Install Docker
    ```sh
    sudo apt-get update
@@ -54,5 +54,62 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
    ```
 
 3. Docker Swarm
+   ```
+   docker swarm init --advertise-addr 192.168.99.100
+   ```
+   alamat IP disesuaikann dengan IP OS.
+   Kemudian jalankan potongan ```code``` yang muncul pada ```terminal``` dengan format:
+   ```
+   docker swarm join --token <LONG-TOKEN-ID> <IP-ADDRESS-OF-MANAGER:PORT>
+   ```
 
 4. Portainer
+   Install portainer untuk mempermudah dalam memanage docker via GUI.
+   ```
+   mkdir -p /opt/portainer && cd /opt/portainer
+   curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
+   ```
+
+   Selanjutnya modifikasi pada file ```portainer-agent-stack.yml``` khususnya pada port 8000 ke 18000 dan 9000 ke 19000:
+   ```
+   ports:
+      - "9000:9000"
+      - "8000:8000"
+   ```
+   menjadi:
+   ```
+   ports:
+      - "19000:9000"
+      - "18000:8000"
+   ```
+   dan untuk membuat portainernya, jalankan:
+   ```
+   docker stack deploy --compose-file=portainer-agent-stack.yml portainer
+   ```
+   Untuk mengakses GUI Portainer, silahkan buka browser dan akses ```<alamat-IP:19000>
+
+
+## INSTAL OPENCTI
+1. Siapkan file docker opencti, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker">Docker OPENCTI</a>
+2. Siapkan file docker-compose.yml, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker/blob/master/docker-compose.yml">Docker-Compose.yml</a>
+3. Siapkan file environment ```.env``` dapat di-copas dari file ```.env.sample``` pada (ENV OPENCTI)[https://github.com/OpenCTI-Platform/docker/blob/master/.env.sample].
+   ```sh
+    OPENCTI_ADMIN_EMAIL=admin@opencti.io
+    OPENCTI_ADMIN_PASSWORD=ChangeMe
+    OPENCTI_ADMIN_TOKEN=ChangeMe
+    MINIO_ROOT_USER=ChangeMeAccess
+    MINIO_ROOT_PASSWORD=ChangeMeKey
+    RABBITMQ_DEFAULT_USER=guest
+    RABBITMQ_DEFAULT_PASS=guest
+    CONNECTOR_HISTORY_ID=ChangeMe
+    CONNECTOR_EXPORT_FILE_STIX_ID=ChangeMe
+    CONNECTOR_EXPORT_FILE_CSV_ID=ChangeMe
+    CONNECTOR_EXPORT_FILE_TXT_ID=ChangeMe
+    CONNECTOR_IMPORT_FILE_STIX_ID=ChangeMe
+    CONNECTOR_IMPORT_DOCUMENT_ID=ChangeMe
+    SMTP_HOSTNAME=ChangeMe.Mail.Com
+   ```
+
+   
+
+   
