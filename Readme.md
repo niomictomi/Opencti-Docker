@@ -90,9 +90,9 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
 
 
 ## INSTAL OPENCTI
-1. Siapkan file docker opencti, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker">Docker OPENCTI</a>
-2. Siapkan file docker-compose.yml, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker/blob/master/docker-compose.yml">Docker-Compose.yml</a>
-3. Siapkan file environment ```.env``` dapat di-copas dari file ```.env.sample``` pada (ENV OPENCTI)[https://github.com/OpenCTI-Platform/docker/blob/master/.env.sample].
+1. Siapkan file docker opencti, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker" target="_blank">Docker OPENCTI</a>
+2. Siapkan file docker-compose.yml, dapat didownload melaui <a href="https://github.com/OpenCTI-Platform/docker/blob/master/docker-compose.yml" target="_blank">Docker-Compose.yml</a>
+3. Siapkan file environment ```.env``` dapat di-copas dari file ```.env.sample``` pada <a href="https://github.com/OpenCTI-Platform/docker/blob/master/.env.sample" target="_blank">ENV OPENCTI</a>.
    ```sh
     OPENCTI_ADMIN_EMAIL=admin@opencti.io
     OPENCTI_ADMIN_PASSWORD=ChangeMe
@@ -110,6 +110,6 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
     SMTP_HOSTNAME=ChangeMe.Mail.Com
    ```
 
-   
+
 
    
