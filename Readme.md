@@ -1,5 +1,18 @@
+<p align="center">
+<a href="https://github.com/niomictomi/uuid-for-laravel" target="_blank">
+<img src="https://github.com/niomictomi/uuid-for-laravel/blob/main/file/tomslock.png" width="400"></a></p>
+
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/badge/apps-siitsa-brightgreen" alt="Apps"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
+
+
 # Installasi OpenCTI menggunnakan DOCKER
 Installasi ini telah diuji pada OS Lubuntu 20
+
 
 # Tahapan
 1. Persiapan
