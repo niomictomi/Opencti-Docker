@@ -32,7 +32,8 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
 1. Pre-Install Docker
    ```sh
    sudo apt-get update
-
+   ```
+   ```sh
    sudo apt-get install \
     apt-transport-https \
     ca-certificates \
@@ -59,6 +60,8 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
 2. Install Docker dan Docker Compose
    ```sh
    sudo apt-get update
+   ```
+   ```
    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose
     ```
    Manage docker as  non-root user
@@ -80,6 +83,8 @@ Open CTI yang diinstall pada docker, membutuhkan environment sebagai berikut:
    Install portainer untuk mempermudah dalam memanage docker via GUI.
    ```
    mkdir -p /opt/portainer && cd /opt/portainer
+   ```
+   ```
    curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
    ```
 
